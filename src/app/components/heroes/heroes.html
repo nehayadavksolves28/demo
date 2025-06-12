@@ -1,3 +1,19 @@
-<p>{{hero.name}}</p>
+<div>
+<!-- <h1>{{hero.name | uppercase}} Details</h1>
 <br>
-<p>{{hero.id}}</p>
+<p>Name: {{hero.name}}</p>
+<br>
+<p>Id: {{hero.id}}</p> -->
+
+
+
+<!-- <input id=name type="text" [(ngModel)]="heroes.name" /> -->
+
+<h2>My Heroes</h2>
+<ul>
+  @for (hero of heroes; track hero.id) {
+    <li>{{ hero.id }} - {{ hero.name }}</li>
+  }
+</ul>
+
+</div>
